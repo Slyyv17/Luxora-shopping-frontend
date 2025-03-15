@@ -7,9 +7,9 @@ import './index.css'
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import Account from './pages/Account.jsx';
-import ProductCart from './pages/ProductCart.jsx';
 import Shop from './pages/Shop.jsx';
 import Faq from './pages/Faq.jsx';
+import Cart from './pages/Cart.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,8 +37,8 @@ const router = createBrowserRouter([
         element: <Account />
       },
       {
-        path: '/productcart',
-        element: <ProductCart />
+        path: '/cart',
+        element: <Cart />
       },
       {
         path: '/faq',

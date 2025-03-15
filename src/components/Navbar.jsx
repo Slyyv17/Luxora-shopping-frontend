@@ -71,7 +71,7 @@ const Navbar = () => {
             <Link to="/account">
               <FontAwesomeIcon icon={faUser} className="text-iconClr" />
             </Link>
-            <Link to="/productcart">
+            <Link to="/cart">
               <FontAwesomeIcon icon={faShoppingCart} className="text-iconClr" />
             </Link>
           </div>
@@ -90,8 +90,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/productcart">
+            <Link to="/cart">
               <FontAwesomeIcon icon={faShoppingCart} className="text-iconClr" />
+              <div className='absolute w-4 h-4 text-sm rounded-full right-1 top-5 bg-iconClr text-secClr'> 0 </div>
             </Link>
           </li>
         </ul>

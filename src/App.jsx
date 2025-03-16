@@ -3,15 +3,16 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Navbar from './components/Navbar'
 
+
 function App() {
   return (
-    <div>
+    <main>
       <Navbar />
 
       <div className='container mx-auto mt-10'>
           <Outlet /> {/* This will render the current route's element (Home, About, Contact) */}
       </div>
-    </div>
+    </main>
   )
 }
 

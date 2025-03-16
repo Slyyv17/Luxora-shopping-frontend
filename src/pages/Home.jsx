@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../components/Footer';
 import Collections from '../components/Collections';
+// import { CartProvider } from '../context/CartContext';
 
 const Home = () => {
 
@@ -20,22 +21,6 @@ const Home = () => {
         hidden: { opacity: 1 },
         visible: { transition: { staggerChildren: 1.5 } },
     };
-
-    // Using useInView to track visibility of the product grid
-
-
-    // Function to add item to cart
-    
-    // const products = [
-    //     { image: lux1, name: 'Signature Italian Hopstack', price: '₦2,000.00' },
-    //     { image: lux2, name: 'Black Leather Casual Shoe', price: '₦1,000.00' },
-    //     { image: lux3, name: 'Black Leather Half Shoe', price: '₦1,000.00' },
-    //     { image: lux4, name: 'Black Sleeve Maxi Dress', price: '₦1,500.00' },
-    //     { image: lux5, name: 'Open Cardigan Long Sleeve', price: '₦2,500.00' },
-    //     { image: lux6, name: 'Brown Maxi Skirt', price: '₦1,500.00' },
-    //     { image: lux7, name: 'Black Casual Suit Jacket', price: '₦2,000.00' },
-    //     { image: lux8, name: 'Sweatyrocks Long Pants', price: '₦2,500.00' },
-    // ];
 
     return (
         <main>
@@ -82,7 +67,7 @@ const Home = () => {
             <div>
                 <Collections />
             </div>
-
+            
             {/* Shop Now Button Section */}
             <section className="flex items-center justify-center p-10">
                 <Link to="/productcart">

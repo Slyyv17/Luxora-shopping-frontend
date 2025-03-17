@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
 
         {/* Hamburger Menu for Small Screens */}
-        <button className="md:hidden text-iconClr" onClick={toggleMenu}>
+        <button className="transition-all duration-300 md:hidden text-iconClr" onClick={toggleMenu}>
           {menuOpen ? (
             <FontAwesomeIcon icon={faTimes} className="text-lg" />
           ) : (

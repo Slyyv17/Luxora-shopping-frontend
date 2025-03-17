@@ -1,16 +1,15 @@
-// Home.jsx
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../components/Footer';
 import Collections from '../components/Collections';
-// import { CartProvider } from '../context/CartContext';
+import { Helmet } from "react-helmet";
+import { Toaster } from 'sonner';
 
 const Home = () => {
-
     // Animation Variants for Framer Motion
     const fadeInUp = {
         hidden: { opacity: 0, y: 50 },
@@ -24,6 +23,10 @@ const Home = () => {
 
     return (
         <main>
+            <Helmet>
+                <title>Luxora</title>
+                <meta name="description" content="Home page" />
+            </Helmet>
 
             {/* Hero Section */}
             <motion.section
@@ -67,10 +70,13 @@ const Home = () => {
             <div>
                 <Collections />
             </div>
-            
+
+            {/* Toast Notifications */}
+            <Toaster richColors position="top-center" />
+
             {/* Shop Now Button Section */}
             <section className="flex items-center justify-center p-10">
-                <Link to="/productcart">
+                <Link to="/shop">
                     <button className="w-40 p-2 font-medium uppercase transition-all duration-500 border text-md border-pryClr font-btnFF text-pryClr hover:bg-pryClr hover:text-secClr">
                         Shop Now <FontAwesomeIcon icon={faArrowRightLong} />
                     </button>

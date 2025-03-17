@@ -15,6 +15,7 @@ export default {
         iconClr: '#2E302F',
         otherBg: '#DDE1E2',
         closeBtnClr: '#FF0000',
+        removeBtn: '#CC3333',
       },
 
       fontFamily: {
@@ -26,6 +27,7 @@ export default {
       backgroundImage: {
         'heroImage': "url('./src/assets/images/close-up-stylish-adult-male-with-sunglasses.webp')",
         'secondImage': "url('./src/assets/images/front-view-adult-male-posing-with-stylish-hat.webp')",
+        'acctImage': "url('./src/assets/images/wardrobe.jpeg')",
       },
 
       height: {
